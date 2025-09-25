@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Truck, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import adtLogo from "@/assets/adt-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,11 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-              <Truck className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div>
-              <div className="text-xl font-bold text-foreground">ADT Logistix</div>
-              <div className="text-xs text-muted-foreground">Freight Solutions</div>
-            </div>
+            <img 
+              src={adtLogo} 
+              alt="ADT Logistix Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

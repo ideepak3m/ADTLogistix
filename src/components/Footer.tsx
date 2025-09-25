@@ -1,5 +1,6 @@
-import { Truck, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import adtLogo from "@/assets/adt-logo.png";
 
 const Footer = () => {
   return (
@@ -9,13 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent">
-                <Truck className="h-6 w-6 text-accent-foreground" />
-              </div>
-              <div>
-                <div className="text-xl font-bold">ADT Logistix</div>
-                <div className="text-sm text-primary-foreground/80">Freight Solutions</div>
-              </div>
+              <img 
+                src={adtLogo} 
+                alt="ADT Logistix Logo" 
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-primary-foreground/80 max-w-md">
               Professional, low-cost transportation services across Ontario. 
