@@ -30,7 +30,7 @@ const Home = () => {
               <Button variant="hero" size="lg" asChild>
                 <Link to="/contact">Get a Quote</Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button variant="hero-outline" size="lg">
                 <Phone className="h-4 w-4 mr-2" />
                 647-559-4533
               </Button>

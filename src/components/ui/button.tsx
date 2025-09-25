@@ -17,6 +17,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-semibold",
         cta: "bg-primary text-primary-foreground hover:bg-primary-light shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold",
+        "hero-outline": "bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 hover:border-primary-foreground/50 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-medium",
       },
       size: {
         default: "h-10 px-4 py-2",
