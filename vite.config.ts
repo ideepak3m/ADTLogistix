@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/ADTLogistix/', // Set base for GitHub Pages (disabled for preview)
   server: {
     host: "::",
     port: 8080,
